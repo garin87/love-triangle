@@ -4,12 +4,13 @@
 */
 module.exports = function getLoveTrianglesCount(arr = []) {
 
-var count= 0;
-var flag = false; 
-for( var i = 0; i < arr.length; i++){
-  var SpichoneeA = arr[i] - 1 ;
-  var SpichoneeB = arr[SpichoneeA] - 1;
-  var SpichoneeC = arr[SpichoneeB] - 1;
+  let count= 0;
+let flag = false; 
+  
+for( let i = 0; i < arr.length; i++){
+  let SpichoneeA = arr[i] - 1 ;
+  let SpichoneeB = arr[SpichoneeA] - 1;
+  let SpichoneeC = arr[SpichoneeB] - 1;
 
   if(SpichoneeA == i){ flag = true};
   if (SpichoneeA == SpichoneeB) { flag =  true};
